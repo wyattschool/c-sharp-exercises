@@ -17,12 +17,12 @@ namespace Restaurant
 
 		public class MenuItem
 		{
-			public string name;
-			public double price;
-			public string description;
-			public string category;
-			public string status;
-			public DateTime lastEditted;
+			public string name { get; set;}
+			public double price { get; set; }
+			public string description { get; set; }
+			public string category { get; set; }
+			public string status { get; set; }
+			public DateTime lastEditted { get; set; }
 
 			public MenuItem(string itemName,double itemPrice, string itemDescription,string itemCategory, string itemStatus, DateTime whenLastEditted)
 			{
@@ -68,6 +68,11 @@ namespace Restaurant
 			public static void EradicateItem()
 			{
 				//Completely delete item from existing
+			}
+
+			public static void EditItem()
+			{
+				//Ask the user for an item and let them edit their fields.
 			}
 		}
 	}
